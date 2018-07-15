@@ -14,6 +14,10 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    session.destroy :password
+  end
+
   private
 
 end
